@@ -18,9 +18,19 @@
           <meta name="twitter:title" content="WIB Farsi - Collection Summer 2023" />
           <meta name="twitter:description" content="WIB Farsi is a non-profit organization dedicated to empowering and enlightening Iranian communities about the limitless possibilities of decentralized technologies." />
           <meta name="twitter:image" content="https://i.postimg.cc/gkLfd2d0/wib.png" />
-          
+
+            
         </head>
         <body>
-            <iframe src="https://www.curate.page/t/WIB-Farsi-Collection-Summer-2023" width="100%" height=auto />
+            <iframe src="https://www.curate.page/t/WIB-Farsi-Collection-Summer-2023" id="myIframe" width="100%" />
+                    <script>
+                    // Selecting the iframe element
+                    var iframe = document.getElementById("myIframe");
+                    
+                    // Adjusting the iframe height onload event
+                    iframe.onload = function(){
+                        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                    }
+                    </script>
         </body>
     </html>
